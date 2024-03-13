@@ -10,7 +10,8 @@ number: ")
                     int(student_id)
                     break
                 except ValueError:
-                    print("Please enter a valid Student ID.") 
+                    print("Please enter a valid Student ID \
+(numeric characters only).")
                     
             file.write(f"{student_id}\n")
             print(f"Student {num} registered successfully",'.' * 30)  # * 30 \
@@ -28,6 +29,6 @@ exam venue registration: "))
                 print("Please enter the correct number of students.")
         except ValueError:
             print("Please enter a valid number of students for exam venue \
-registration.")
+registration (numeric characters only).")
      
 register_students(num_students)
